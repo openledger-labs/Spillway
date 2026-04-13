@@ -1,0 +1,39 @@
+{
+  "name": "spillway",
+  "version": "0.1.0",
+  "description": "Subscription payment channels on Stellar using the x402 protocol",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/demo/premium-api.ts",
+    "server": "node dist/demo/premium-api.js",
+    "demo": "ts-node src/demo/agent.ts",
+    "test": "vitest run",
+    "test:contracts": "cd contracts && cargo test",
+    "lint": "eslint src/ --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerosumsum/Spillway.git"
+  },
+  "keywords": ["stellar", "soroban", "x402", "subscriptions", "payment-channels", "streaming-payments"],
+  "author": "zerosumsum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zerosumsum/Spillway/issues"
+  },
+  "homepage": "https://github.com/zerosumsum/Spillway#readme",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^12.3.0",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0",
+    "eslint": "^9.0.0"
+  }
+}

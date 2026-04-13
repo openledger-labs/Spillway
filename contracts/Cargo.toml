@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["subscription-channel"]
+
+[workspace.dependencies]
+soroban-sdk = "21.7.4"
